@@ -1,0 +1,23 @@
+{
+  "name": "n-travails",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Tree.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaojgabriel/N-travails.git"
+  },
+  "keywords": [],
+  "author": "joaojgabriel <jonhlhn.surf@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaojgabriel/N-travails/issues"
+  },
+  "homepage": "https://github.com/joaojgabriel/N-travails#readme",
+  "devDependencies": {
+    "eslint": "^8.40.0"
+  }
+}
