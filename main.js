@@ -19,10 +19,10 @@ class Node {
 const move = (curr, depth, maxDepth, end, seen) => {
   // Base cases
   if (curr[0] < 0 || curr[0] > 7 || curr[1] < 0 || curr[1] > 7) {
-    return null;
+    return;
   }
-  if (depth >= maxDepth[0]) return null;
-  if (seen[curr[0]][curr[1]]) return null;
+  if (depth >= maxDepth[0]) return;
+  if (seen[curr[0]][curr[1]]) return;
 
   if (curr[0] === end[0] && curr[1] === end[1]) {
     maxDepth[0] = depth;
@@ -47,14 +47,12 @@ const move = (curr, depth, maxDepth, end, seen) => {
     );
     if (path) {
       seen[curr[0] + d0][curr[1] + d1] = false;
-      found = true;
-      node.next = path;
+      found = true; node.next = path;
     }
   }
 
   // post
   if (found) return node;
-  return null;
 };
 
 const travail = (start, end) => {
@@ -72,5 +70,5 @@ const travail = (start, end) => {
     head = head.next;
   }
 
-  return path;
+  return path; 
 };
