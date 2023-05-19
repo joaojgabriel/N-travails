@@ -26,7 +26,7 @@ const move = (curr, depth, maxDepth, end, seen) => {
 
   if (curr[0] === end[0] && curr[1] === end[1]) {
     maxDepth[0] = depth;
-    return new Node(curr);
+    return new Node(end);
   }
 
   // Recursive cases
