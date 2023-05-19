@@ -75,8 +75,3 @@ const travail = (start, end) => {
 
   return path;
 };
-
-console.log(travail([0, 0], [1, 2]));
-console.log(travail([1, 2], [0, 0]));
-console.log(travail([0, 0], [7, 7]));
-console.log(travail([0, 0], [3, 3]));
