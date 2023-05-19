@@ -24,15 +24,14 @@ const move = (curr, depth, maxDepth, end, seen) => {
   if (depth >= maxDepth[0]) return null;
   if (seen[curr[0]][curr[1]]) return null;
 
-  const node = new Node(curr);
-
   if (curr[0] === end[0] && curr[1] === end[1]) {
     maxDepth[0] = depth;
-    return node;
+    return new Node(curr);
   }
 
   // Recursive cases
   // pre
+  const node = new Node(curr);
   seen[curr[0]][curr[1]] = true;
   let found = false;
 
