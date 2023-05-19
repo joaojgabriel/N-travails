@@ -66,7 +66,7 @@ const travail = (start, end) => {
 
   const path = [];
   while (head) {
-		path.push(`${String.fromCharCode(97 + head.value[0])}${head.value[1]}`);
+		path.push(`${String.fromCharCode(97 + head.value[0])}${head.value[1] + 1}`);
     head = head.next;
   }
 
